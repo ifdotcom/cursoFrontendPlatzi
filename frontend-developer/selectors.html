@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Selectores combinados
+        DESCENDIENTES | div p
+        HIJO DIRECTO | div > p
+        ELEMENTO ADYACENTE | div + p
+        GENERAL DE HERMANOS | div ~ p
+        */
+
+      /* todos los p que estén dentro de div sin importar que esten dentro de otro contenedor*/
+      div p {
+        color: lime;
+      }
+      /* hijo directo */
+      div > div {
+        background: plum;
+      }
+      .es {
+        background: pink;
+      }
+      /* todos los section que aprezcan después de un div */
+      div + section {
+        background: palevioletred;
+      }
+      /* todos los hermanos p que tenemos después de div */
+      div ~ p {
+        color: paleturquoise;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <p>Platzi</p>
+        <div class="es">Es</div>
+      </div>
+    </div>
+    <p>Clase de selectores</p>
+    <p>Clase de selectores</p>
+    <section>Es lo mejor</section>
+    <div>Master</div>
+  </body>
+</html>
