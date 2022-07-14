@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* PSEUDOCLASES        |       PSEUDOELEMENTOS
+            :active          |          ::after
+            :focus           |          ::before
+            :hover           |          ::first-letter
+            :nth-child(n)    |          ::placeholder
+
+        Pseudoclases: nos permite llegar a las acciones que hace el usuario
+        Pseudoelementos: nos permite acceder a eelementos de HTML que no son accesibles
+    */
+      p {
+        color: plum;
+        font-size: 32px;
+      }
+      p:hover {
+        color: palevioletred;
+      }
+
+      div p:nth-child(2){
+        color: purple;
+      }
+
+      div p::first-letter{
+        color: teal;
+      }
+      p::before{
+        content: "✨";
+      }
+      p::after{
+        content: "🚀";
+      }
+      ::placeholder{
+        color: royalblue;
+      }
+      	a:link {
+        color: blue;
+        }
+        a:visited {
+        color: yellow;
+        }
+        a:hover {
+        color: green;
+        }
+        a:active {
+        color: purple;
+        }
+    </style>
+  </head>
+  <body>
+    <p>Hola</p>
+
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo mejor</p>
+    </div>
+   <input type="text" placeholder="name">
+   <a href="http://platzi.com">Ir a Platzi</a>
+  </body>
+</html>
