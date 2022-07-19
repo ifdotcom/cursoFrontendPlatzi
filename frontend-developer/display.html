@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* Display: tipo de visualiación que tienen los elementos 
+        - block
+        - inline
+        - inline-block
+        - flex
+        - grid
+    */
+
+    body {
+      margin: 0;
+    }
+
+    div {
+      background: salmon;
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+    }
+    a {
+      background: skyblue;
+      /* width y height no se aplican a elementos inline */
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+    }
+    button{
+        background: blueviolet;
+        /* width y height  se aplican a elementos inline-block */
+      width: 200px;
+        height: 200px;
+      margin: 20px;
+    }
+  </style>
+  <body>
+    <div>Bloque</div>
+    <a href="/">inline</a>
+    <button>inline-block</button>
+  </body>
+</html>
