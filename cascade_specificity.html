@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Entre mayor especificidad mayor va a ser la probabilidad de que sus 
+    declaraciones se usen
+        x o o o o | !IMPORTANT
+          x o o o | Estilos en línea
+            x o o | #ID
+              x o | Clases, atributos y pseudoclases
+                x | Elementos y pseudoelementos
+                o | Selector universal
+
+        #id h1::first-letter
+            100   #ID
+          +   1   h1
+              1   ::first-letter
+            ----
+             102   <---- MÁS ESPECÍFICO
+
+        p .sidemenu div:hover
+              1   p
+          +  10   .sidemenu
+              1   div
+             10   :hover
+            ----
+             22    <---- MENOS ESPECÍFICO
+
+
+    */
+#platzi{
+    color: red;
+}
+.master{
+    color: blueviolet;
+}
+
+</style>
+<body>
+    <div id="platzi" class="master">Platzi</div>
+</body>
+</html>
