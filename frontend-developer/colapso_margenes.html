@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* El colapso de margenes
+    Sucede cuando hay dos elementos bloque adyacentes
+    No sucede cuando se aplica flex-box, grid y elementos que no
+    sean de bloque
+    */
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    div {
+      margin: 20px;
+    }
+  </style>
+  <body>
+    <section class="container">
+      <div>Platzi</div>
+      <div>Master</div>
+    </section>
+  </body>
+</html>
