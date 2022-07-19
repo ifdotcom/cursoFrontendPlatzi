@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+.container{
+    width: 300px;
+    height: 250px;
+    border: 1px solid purple;
+    position: relative;
+}
+.red{
+    width: 70px;
+    height: 70px;
+    background: red;
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    z-index: 5;
+}
+.blue{
+    width: 70px;
+    height: 70px;
+    background: blue;
+    position: absolute;
+    top: 50px;
+    left: 110px;
+    z-index: 4;
+}
+.yellow{
+    width: 70px;
+    height: 70px;
+    background: yellow;
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    z-index: 6;
+    /* por mas que incremente el z-index
+    el que va a ir primero es el z-index del contenedr padre
+    en este caso el blue
+    */
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="red"></div>
+      <div class="blue">
+        <div class="yellow"></div>
+      </div>
+    </div>
+  </body>
+</html>
