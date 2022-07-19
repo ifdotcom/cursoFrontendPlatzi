@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div{
+    /* con estas medidas el div tendra un width de 242
+    y un height de 242 
+    para evitar esto y que el div solo deba medir 200px
+    se usa box-sizing: border-box
+    */
+    width: 100px;
+    height: 100px;
+    background: plum;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid purple;
+    /* box-sizing redistribuye las medidas de tal manera
+    que el elemento mida lo que se especificó desde un 
+    principio, en este caso:
+    de width trendrá 158 + 40 de padding + 2 de border = 200px
+    de height trendrá 158 + 40 de padding + 2 de border = 200px
+    */
+    margin: 20px;
+    /* al aplicar el margin, este se tr */
+}
+    </style>
+
+</head>
+<body>
+    <div>Platzi</div>
+    <div>Es lo máximo</div>
+
+</body>
+</html>
